@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050A12" />
+  <meta name="description" content="Privacy Policy and Account/Data Deletion information for Batras Anti-Theft Protection." />
+  <title>Batras Anti-Theft Protection | Privacy Policy</title>
+
+  <style>
+    :root {
+      --bg: #050A12;
+      --bg-secondary: #07111E;
+      --glass: rgba(16, 26, 40, 0.58);
+      --glass-soft: rgba(16, 26, 40, 0.38);
+      --glass-border: rgba(75, 223, 255, 0.20);
+      --cyan: #38D7FF;
+      --cyan-light: #72E8FF;
+      --white: #FFFFFF;
+      --text-secondary: #AAB8CC;
+      --text-muted: #7F91A9;
+      --success: #44E3A3;
+      --warning: #FFB85C;
+      --danger: #FF7587;
+      --purple: #7357FF;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 92% 4%, rgba(56, 215, 255, 0.18), transparent 28%),
+        radial-gradient(circle at 5% 95%, rgba(44, 123, 255, 0.15), transparent 30%),
+        radial-gradient(circle at 105% 48%, rgba(115, 87, 255, 0.12), transparent 26%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-secondary) 100%);
+      color: var(--white);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    body::before {
+      width: 360px;
+      height: 360px;
+      right: -150px;
+      top: -140px;
+      background: rgba(56, 215, 255, 0.16);
+    }
+
+    body::after {
+      width: 340px;
+      height: 340px;
+      left: -150px;
+      bottom: -140px;
+      background: rgba(44, 123, 255, 0.14);
+    }
+
+    a {
+      color: var(--cyan-light);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--white);
+    }
+
+    .page {
+      width: min(100% - 28px, 980px);
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+
+    .brand-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 18px rgba(56, 215, 255, 0.9);
+    }
+
+    .hero {
+      padding: 42px 8px 30px;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: var(--cyan);
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--text-secondary);
+      font-size: clamp(15px, 2vw, 18px);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 13px;
+      border: 1px solid var(--glass-border);
+      border-radius: 999px;
+      background: rgba(10, 20, 31, 0.62);
+      color: var(--text-secondary);
+      font-size: 12px;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .pill strong {
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .glass {
+      background: linear-gradient(180deg, rgba(17, 29, 44, 0.70), rgba(8, 18, 29, 0.58));
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+
+    .notice {
+      margin: 8px 0 22px;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .notice::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--cyan), var(--purple));
+      box-shadow: 0 0 22px rgba(56, 215, 255, 0.9);
+    }
+
+    .notice-label {
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .notice h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .notice p {
+      color: var(--text-secondary);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .nav {
+      position: sticky;
+      top: 18px;
+      padding: 18px;
+      border-radius: var(--radius-lg);
+      background: rgba(9, 19, 30, 0.60);
+      border: 1px solid rgba(75, 223, 255, 0.14);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+    }
+
+    .nav-title {
+      color: var(--text-muted);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      font-weight: 800;
+      margin: 2px 8px 10px;
+    }
+
+    .nav a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: var(--text-secondary);
+      font-size: 13px;
+      transition: 0.18s ease;
+    }
+
+    .nav a:hover {
+      background: rgba(56, 215, 255, 0.08);
+      color: var(--white);
+      transform: translateX(2px);
+    }
+
+    .content {
+      display: grid;
+      gap: 16px;
+    }
+
+    .section {
+      padding: 28px;
+    }
+
+    .section-number {
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      margin-bottom: 8px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .section p {
+      color: var(--text-secondary);
+      margin-top: 10px;
+    }
+
+    .section ul,
+    .section ol {
+      margin: 12px 0 0 20px;
+      color: var(--text-secondary);
+    }
+
+    .section li {
+      margin: 8px 0;
+      padding-left: 3px;
+    }
+
+    .section strong {
+      color: var(--white);
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .data-card {
+      border: 1px solid rgba(75, 223, 255, 0.13);
+      background: rgba(8, 18, 29, 0.46);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+
+    .data-card h3 {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .data-card p {
+      font-size: 13px;
+      margin: 0;
+      color: var(--text-muted);
+    }
+
+    .delete-box {
+      margin-top: 16px;
+      padding: 20px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 117, 135, 0.22);
+      background: rgba(255, 117, 135, 0.055);
+    }
+
+    .delete-box h3 {
+      color: #FFD7DC;
+      margin-bottom: 8px;
+    }
+
+    .delete-box p {
+      margin-top: 8px;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border-radius: 14px;
+      border: 1px solid var(--glass-border);
+      background: rgba(56, 215, 255, 0.10);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .btn:hover {
+      background: rgba(56, 215, 255, 0.17);
+    }
+
+    .btn-danger {
+      border-color: rgba(255, 117, 135, 0.26);
+      background: rgba(255, 117, 135, 0.09);
+    }
+
+    .footer {
+      margin-top: 22px;
+      padding: 24px 8px 10px;
+      text-align: center;
+      color: #65768D;
+      font-size: 12px;
+    }
+
+    .footer strong {
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 780px) {
+      .page {
+        width: min(100% - 20px, 980px);
+        padding-top: 18px;
+      }
+
+      .hero {
+        padding: 30px 6px 24px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        position: static;
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 10px;
+        border-radius: 16px;
+        scrollbar-width: none;
+      }
+
+      .nav::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-title {
+        display: none;
+      }
+
+      .nav a {
+        white-space: nowrap;
+        background: rgba(56, 215, 255, 0.04);
+      }
+
+      .section {
+        padding: 22px;
+        border-radius: 22px;
+      }
+
+      .data-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .glass {
+        animation: rise 0.55s ease both;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        BATRAS
+      </div>
+
+      <h1>Anti-Theft<br><span>Privacy & Data</span></h1>
+
+      <p>
+        Privacy Policy for <strong>Batras Anti-Theft Protection</strong>, including
+        information about background location, protected-device data, remote anti-theft
+        controls, and account/data deletion.
+      </p>
+
+      <div class="hero-meta">
+        <span class="pill"><strong>App:</strong> Batras Anti-Theft Protection</span>
+        <span class="pill"><strong>Developer:</strong> Batras Industries</span>
+        <span class="pill"><strong>Effective:</strong> 29 September 2026</span>
+      </div>
+    </header>
+
+    <section class="notice glass">
+      <div class="notice-label">Important disclosure</div>
+      <h2>Background location is used for anti-theft protection</h2>
+      <p>
+        When Anti-Theft Protection is enabled and the required Android permissions are granted,
+        the protected phone may collect and upload precise location information even while the
+        app is not actively open. This allows the authenticated owner to locate a lost or stolen
+        device, view its last known position, and use Live Find.
+      </p>
+    </section>
+
+    <div class="layout">
+      <nav class="nav" aria-label="Privacy policy navigation">
+        <div class="nav-title">CONTENTS</div>
+        <a href="#about">About</a>
+        <a href="#data">Data We Process</a>
+        <a href="#location">Background Location</a>
+        <a href="#use">How Data Is Used</a>
+        <a href="#services">Third-Party Services</a>
+        <a href="#sharing">Sharing</a>
+        <a href="#security">Security</a>
+        <a href="#retention">Retention</a>
+        <a href="#choices">Your Choices</a>
+        <a href="#delete-account">Delete Account</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="content">
+
+        <section id="about" class="section glass">
+          <div class="section-number">01</div>
+          <h2>About this policy</h2>
+          <p>
+            Batras Industries ("we", "us", or "our") provides Batras Anti-Theft Protection,
+            an Android application designed to help users protect and locate devices that
+            they have registered to their own account.
+          </p>
+          <p>
+            This policy explains what information the app processes, why it is processed,
+            how it supports anti-theft features, and what choices are available to users.
+          </p>
+        </section>
+
+        <section id="data" class="section glass">
+          <div class="section-number">02</div>
+          <h2>Information we process</h2>
+
+          <div class="data-grid">
+            <div class="data-card">
+              <h3>Account information</h3>
+              <p>Name, email address, authentication provider, Firebase user identifier, and information required to authenticate your account.</p>
+            </div>
+
+            <div class="data-card">
+              <h3>Protected-device information</h3>
+              <p>App-generated device ID, device name, protected-device UID, owner UID, and protection status.</p>
+            </div>
+
+            <div class="data-card">
+              <h3>Precise location</h3>
+              <p>Latitude, longitude, location accuracy, speed when available, and last-seen information.</p>
+            </div>
+
+            <div class="data-card">
+              <h3>Device status</h3>
+              <p>Battery level, online/heartbeat state, tracking mode, and whether Stolen Mode is active.</p>
+            </div>
+
+            <div class="data-card">
+              <h3>Remote commands</h3>
+              <p>Command IDs and timestamps used for Remote Ring, Remote Lock, Live Find, and Stolen Mode.</p>
+            </div>
+
+            <div class="data-card">
+              <h3>Local security settings</h3>
+              <p>Protection/PIN configuration may be stored locally on the device. The app is designed to store a PIN as a cryptographic hash rather than plain text.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="location" class="section glass">
+          <div class="section-number">03</div>
+          <h2>Background and precise location</h2>
+          <p>
+            Background location is a core anti-theft function. When you enable Anti-Theft
+            Protection and grant the required location permissions, the protected phone may
+            continue sending location and heartbeat updates while the app is in the background.
+          </p>
+          <p>
+            This information is used so the authenticated owner can locate a device after it
+            is lost or stolen, view a current or last-known location, and use Live Find.
+          </p>
+          <p>
+            You can revoke location permissions from Android system settings. If precise or
+            background location permission is removed, location-based anti-theft features may
+            stop working or become less accurate.
+          </p>
+        </section>
+
+        <section id="use" class="section glass">
+          <div class="section-number">04</div>
+          <h2>How we use information</h2>
+          <ul>
+            <li>Authenticate users through supported sign-in methods.</li>
+            <li>Register and link a protected Android device to its owner account.</li>
+            <li>Show current or last-known device location.</li>
+            <li>Show battery, online/offline, last-seen, accuracy, and tracking status.</li>
+            <li>Support Live Find while protection is enabled.</li>
+            <li>Deliver owner-authorized Remote Ring and Remote Lock commands.</li>
+            <li>Enable or disable Stolen Mode for a protected device.</li>
+            <li>Maintain security, reliability, and integrity of the anti-theft service.</li>
+          </ul>
+        </section>
+
+        <section id="services" class="section glass">
+          <div class="section-number">05</div>
+          <h2>Third-party services</h2>
+          <p>
+            The app uses third-party services to provide authentication, cloud storage,
+            location, and map functionality. Depending on the feature you use, these may include:
+          </p>
+          <ul>
+            <li><strong>Google Firebase Authentication</strong> — account authentication.</li>
+            <li><strong>Google Cloud Firestore / Firebase</strong> — protected-device records, location/status information, and remote-command state.</li>
+            <li><strong>Google Play services location APIs</strong> — device location when permission is granted.</li>
+            <li><strong>Google Identity / Google Sign-In</strong> — when you choose Google authentication.</li>
+            <li><strong>MapLibre / OpenFreeMap</strong> — map display used by the Live Find interface.</li>
+          </ul>
+          <p>
+            These service providers may process technical information under their own
+            privacy policies and terms.
+          </p>
+        </section>
+
+        <section id="sharing" class="section glass">
+          <div class="section-number">06</div>
+          <h2>Sharing and sale of personal information</h2>
+          <p>
+            We do not sell personal information. Information may be processed by the service
+            providers listed above only as needed to operate app functionality, or disclosed
+            where required by applicable law.
+          </p>
+        </section>
+
+        <section id="security" class="section glass">
+          <div class="section-number">07</div>
+          <h2>Security</h2>
+          <p>
+            We use authentication, protected-device ownership checks, database access controls,
+            and other reasonable safeguards intended to limit access to protected-device
+            information to authorized users.
+          </p>
+          <p>
+            No method of electronic storage or transmission is completely secure, so absolute
+            security cannot be guaranteed.
+          </p>
+        </section>
+
+        <section id="retention" class="section glass">
+          <div class="section-number">08</div>
+          <h2>Data retention</h2>
+          <p>
+            Account and protected-device data may be retained while the account or linked
+            device remains active and for as long as reasonably necessary to provide the
+            service, address security or abuse, resolve disputes, or meet legal obligations.
+          </p>
+          <p>
+            Users can request deletion of their account and associated cloud data using the
+            process described below.
+          </p>
+        </section>
+
+        <section id="choices" class="section glass">
+          <div class="section-number">09</div>
+          <h2>Your choices and controls</h2>
+          <ul>
+            <li>Grant or revoke Android permissions from system settings.</li>
+            <li>Disable Anti-Theft Protection using the app's available security controls.</li>
+            <li>Choose from the supported sign-in methods.</li>
+            <li>Request deletion of your account and associated cloud data.</li>
+          </ul>
+        </section>
+
+        <section id="delete-account" class="section glass">
+          <div class="section-number">10</div>
+          <h2>Delete account & data</h2>
+          <p>
+            You may request deletion of your Batras Anti-Theft Protection account and
+            associated cloud data.
+          </p>
+
+          <div class="delete-box">
+            <h3>How to request deletion</h3>
+            <ol>
+              <li>Contact Batras Industries using the developer contact email shown on the app's Google Play Store listing.</li>
+              <li>Use the subject: <strong>Delete Batras Anti-Theft Account</strong>.</li>
+              <li>Send the request from the email address registered with your Batras Anti-Theft Protection account.</li>
+              <li>Include your registered email address and, if available, your Tracker ID or protected Device ID.</li>
+              <li><strong>Never send your password, PIN, Google password, OTP, or other login secret.</strong></li>
+            </ol>
+
+            <p>
+              After reasonable ownership verification, the account and associated cloud data
+              will be scheduled for deletion. This may include the user profile, linked
+              protected-device records, stored location/last-seen information, battery and
+              tracking status, and remote-command state.
+            </p>
+
+            <p>
+              Limited information may be retained where reasonably necessary for security,
+              fraud/abuse prevention, dispute resolution, or legal obligations.
+            </p>
+
+            <p>
+              We aim to process verified deletion requests within <strong>30 days</strong>.
+            </p>
+          </div>
+
+          <p>
+            <strong>Important:</strong> deleting your account can permanently stop access to
+            Find My Device, Live Find, Remote Ring, Remote Lock, Stolen Mode, and other
+            linked-device features.
+          </p>
+        </section>
+
+        <section class="section glass">
+          <div class="section-number">11</div>
+          <h2>Children's privacy</h2>
+          <p>
+            Batras Anti-Theft Protection is not designed specifically for children. If we
+            become aware that personal information has been processed in a way that violates
+            applicable child-privacy requirements, we will take appropriate steps to address it.
+          </p>
+        </section>
+
+        <section class="section glass">
+          <div class="section-number">12</div>
+          <h2>Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy when the app, legal requirements, or our data
+            practices change. When we make material changes, the effective date shown at the
+            top of this page will be updated.
+          </p>
+        </section>
+
+        <section id="contact" class="section glass">
+          <div class="section-number">13</div>
+          <h2>Contact</h2>
+          <p>
+            <strong>Developer:</strong> Batras Industries
+          </p>
+          <p>
+            For privacy questions, account deletion, or data requests, use the developer
+            contact email listed on the official Google Play Store listing for Batras
+            Anti-Theft Protection.
+          </p>
+
+          <div class="btn-row">
+            <a class="btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a>
+            <a class="btn btn-danger" href="#delete-account">Account deletion</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <strong>Batras Anti-Theft Protection</strong><br />
+      Privacy Policy · Batras Industries · Effective 29 September 2026
+    </footer>
+  </main>
+</body>
+</html>
